@@ -23,9 +23,23 @@ for(i=0; i<100; i++){
         console.log(changeNumber);
 
     }
+    
 
-    
-  
-    
+}
+
+let first = [ 2, 3, 13, 24, 45];
+n=24;
+
+checkNumber(n){
+    for(i=0;i<first.length; i++)
+    if (n==first[i])
+    {
+        console.log("your number is in array");
+
+    }
+    else{
+        console.log("you number is not in the array");
+
+    }
 
 }
