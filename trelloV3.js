@@ -5,16 +5,16 @@ let myTodo={
     addMeeting: function(num){
         this.meeting= this.meeting+num;
     }, 
-    meetDone: function(num){
-        this.meetDone=this.meetDone+num;
+    meetsDone: function(num1){
+        this.meetDone= this.meetDone+num1;
     }, 
     getSummary: function(){
-        return `You have completed ${this.meetDone} meetings today.`;
+        return `You have completed ${this.meetDone} meetings today and ${this.meeting-this.meetDone} meeting left.`;
 
     },
 }
 
 myTodo.addMeeting(5);
-myTodo.meetDone(2);
+myTodo.meetsDone(4);
 
 console.log(myTodo.getSummary());
